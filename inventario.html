@@ -1,0 +1,73 @@
+<div class="container mt-5">
+    <h1>Productos</h1>
+    <div class="row mt-3">
+        <div class="col-md-8">
+            <div class="table-responsive">
+                <div id="productTable">
+                    <!-- Product table will be displayed here -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Categoría</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Eliminar</th>
+                                <th>Actualizar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>útil escolar</td>
+                                <td>Lápiz</td>
+                                <td>$10</td>
+                                <td>100</td>
+                                <td>
+                                    <button type="button" class="btn btn-danger btn-sm delete-btn">Eliminar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-sm update-btn">Actualizar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>útil escolar</td>
+                                <td>Borrador</td>
+                                <td>$5</td>
+                                <td>50</td>
+                                <td>
+                                    <button type="button" class="btn btn-danger btn-sm delete-btn">Eliminar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-sm update-btn">Actualizar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>útil escolar</td>
+                                <td>Libreta</td>
+                                <td>$15</td>
+                                <td>30</td>
+                                <td>
+                                    <button type="button" class="btn btn-danger btn-sm delete-btn">Eliminar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-sm update-btn">Actualizar</button>
+                                </td>
+                            </tr>
+                            <!-- Add more rows for additional products -->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="productForm" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-8">
+            <button type="button" class="btn btn-success" id="showFormBtn">Registrar Productos</button>
+        </div>
+    </div>
+</div>

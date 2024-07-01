@@ -1,0 +1,94 @@
+:root{
+    --sidebar-blackground: #007bff;
+    --letter-color: #f8f9fa;
+    --color-in-white-background: #00000077;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "sidebar content";
+    grid-template-columns: clamp(200px, 10%, 300px) 1fr;
+    grid-template-rows: 1fr;
+    margin: 0;
+}
+
+.sidebar {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: var(--sidebar-blackground);
+    color: var(--letter-color);
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: sidebar;
+}
+
+.sidebar a {
+    color: var(--letter-color);
+    padding: 15px;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.sidebar a:hover {
+    background-color: var(--sidebar-blackground);
+}
+
+.dropdown.user-button {
+    margin-top: auto; /* Mueve el botón de usuario al final del sidebar */
+    padding: 20px;
+}
+
+.dropdown-menu {
+    background-color: var(--sidebar-blackground);
+    color: var(--letter-color);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    color: var(--letter-color);
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-area: content;
+    padding-left: 5vh;
+}
+
+.user-button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-button .user-name {
+    margin-left: 10px;
+    color: var(--color-in-white-background);
+    background-color: var(--letter-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+a{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
